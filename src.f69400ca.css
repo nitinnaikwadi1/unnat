@@ -1,0 +1,78 @@
+.MuiAppBar-colorPrimary {
+  background-color: #26c6da !important;
+}
+
+.MuiButton-containedPrimary{
+  background-color: #03b2b2 !important;
+  /* background-color: #30c6cc !important; */
+}
+
+.MuiFab-root{
+  background-color: white !important;margin: 0px;
+  
+}
+
+.MuiAlert-root{
+font-weight: bolder !important;
+}
+
+.MuiGrid-spacing-xs-2{
+  margin: 0 !important;
+  width: 100% !important;
+}
+
+.MuiGrid-spacing-xs-4{
+  margin: 0 !important;
+  width: 100% !important;
+  
+}
+
+.MuiGrid-spacing-xs-5{
+  margin: 0 !important;
+  width: 100% !important;
+}
+
+@media (min-width: 600px){
+  .MuiToolbar-gutters{
+    padding-left: 8px !important;
+    padding-right: 8px !important;
+  }  
+}
+.MuiToolbar-gutters{
+  padding-left: 8px !important;
+  padding-right: 8px !important;
+}
+
+html {
+  overflow-y: auto;
+  overflow-x: hidden; 
+}
+
+body, #root {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background: url('/brand.58c1f56f.png') no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  overflow: visible !important;
+}
+
+.player-wrapper {
+  position: relative;
+  padding-top: 56.25%; /* 720 / 1280 = 0.5625 */
+}
+
+.react-player {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 0;
+}
+
+
+
+/*# sourceMappingURL=/src.f69400ca.css.map */
