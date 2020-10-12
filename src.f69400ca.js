@@ -95291,6 +95291,8 @@ module.exports = "/mulakshar-kana-ardhchandr.32ef4a51.png";
 module.exports = "/mulakshar-wisarg.990b7f18.png";
 },{}],"assets/eng-listen-letters.png":[function(require,module,exports) {
 module.exports = "/eng-listen-letters.b1c68afd.png";
+},{}],"assets/eng-listen-small-letters.png":[function(require,module,exports) {
+module.exports = "/eng-listen-small-letters.468b073d.png";
 },{}],"assets/eng-listen-number.png":[function(require,module,exports) {
 module.exports = "/eng-listen-number.a9c7619f.png";
 },{}],"assets/eng-listen-1to50.png":[function(require,module,exports) {
@@ -95499,27 +95501,34 @@ const englishInteractiveChoices = [{
 }, {
   parentID: 2,
   id: 2,
-  title: "ENGLISH_NUMBERS",
+  title: "ENGLISH_SMALL_LETTERS",
   color: LANGUAGE_ENGLISH_COLOR_CODE,
-  url: require("./../assets/eng-listen-number.png"),
-  isAvailable: false
+  url: require("./../assets/eng-listen-small-letters.png"),
+  isAvailable: true
 }, {
   parentID: 2,
   id: 3,
+  title: "ENGLISH_NUMBERS",
+  color: LANGUAGE_ENGLISH_COLOR_CODE,
+  url: require("./../assets/eng-listen-number.png"),
+  isAvailable: true
+}, {
+  parentID: 2,
+  id: 4,
   title: "ENGLISH_NUMBERS_1_50",
   color: LANGUAGE_ENGLISH_COLOR_CODE,
   url: require("./../assets/eng-listen-1to50.png"),
-  isAvailable: false
+  isAvailable: true
 }, {
   parentID: 2,
   id: 4,
   title: "ENGLISH_NUMBERS_1_100",
   color: LANGUAGE_ENGLISH_COLOR_CODE,
   url: require("./../assets/eng-listen-1to100.png"),
-  isAvailable: false
+  isAvailable: true
 }];
 exports.englishInteractiveChoices = englishInteractiveChoices;
-},{"./../assets/main-mar.gif":"assets/main-mar.gif","./../assets/main-eng.gif":"assets/main-eng.gif","./../assets/main-mat.gif":"assets/main-mat.gif","./../assets/mar-sub-read.gif":"assets/mar-sub-read.gif","./../assets/mar-sub-write.gif":"assets/mar-sub-write.gif","./../assets/mar-sub-speak.gif":"assets/mar-sub-speak.gif","./../assets/eng-sub-read.gif":"assets/eng-sub-read.gif","./../assets/eng-sub-write.gif":"assets/eng-sub-write.gif","./../assets/eng-sub-speak.gif":"assets/eng-sub-speak.gif","./../assets/mar-listen-mulakshar.png":"assets/mar-listen-mulakshar.png","./../assets/mar-listen-ank.png":"assets/mar-listen-ank.png","./../assets/mar-listen-1to50.png":"assets/mar-listen-1to50.png","./../assets/mar-listen-1to100.png":"assets/mar-listen-1to100.png","./../assets/mulakshar-kana.png":"assets/mulakshar-kana.png","./../assets/mulakshar-pahili-welanti.png":"assets/mulakshar-pahili-welanti.png","./../assets/mulakshar-dusri-welanti.png":"assets/mulakshar-dusri-welanti.png","./../assets/mulakshar-pahila-ukar.png":"assets/mulakshar-pahila-ukar.png","./../assets/mulakshar-dusra-ukar.png":"assets/mulakshar-dusra-ukar.png","./../assets/mulakshar-ek-matra.png":"assets/mulakshar-ek-matra.png","./../assets/mulakshar-don-matra.png":"assets/mulakshar-don-matra.png","./../assets/mulakshar-kana-ek-matra.png":"assets/mulakshar-kana-ek-matra.png","./../assets/mulakshar-kana-don-matra.png":"assets/mulakshar-kana-don-matra.png","./../assets/mulakshar-anuswar.png":"assets/mulakshar-anuswar.png","./../assets/mulakshar-ardhchandr.png":"assets/mulakshar-ardhchandr.png","./../assets/mulakshar-kana-ardhchandr.png":"assets/mulakshar-kana-ardhchandr.png","./../assets/mulakshar-wisarg.png":"assets/mulakshar-wisarg.png","./../assets/eng-listen-letters.png":"assets/eng-listen-letters.png","./../assets/eng-listen-number.png":"assets/eng-listen-number.png","./../assets/eng-listen-1to50.png":"assets/eng-listen-1to50.png","./../assets/eng-listen-1to100.png":"assets/eng-listen-1to100.png"}],"components/NavBar.tsx":[function(require,module,exports) {
+},{"./../assets/main-mar.gif":"assets/main-mar.gif","./../assets/main-eng.gif":"assets/main-eng.gif","./../assets/main-mat.gif":"assets/main-mat.gif","./../assets/mar-sub-read.gif":"assets/mar-sub-read.gif","./../assets/mar-sub-write.gif":"assets/mar-sub-write.gif","./../assets/mar-sub-speak.gif":"assets/mar-sub-speak.gif","./../assets/eng-sub-read.gif":"assets/eng-sub-read.gif","./../assets/eng-sub-write.gif":"assets/eng-sub-write.gif","./../assets/eng-sub-speak.gif":"assets/eng-sub-speak.gif","./../assets/mar-listen-mulakshar.png":"assets/mar-listen-mulakshar.png","./../assets/mar-listen-ank.png":"assets/mar-listen-ank.png","./../assets/mar-listen-1to50.png":"assets/mar-listen-1to50.png","./../assets/mar-listen-1to100.png":"assets/mar-listen-1to100.png","./../assets/mulakshar-kana.png":"assets/mulakshar-kana.png","./../assets/mulakshar-pahili-welanti.png":"assets/mulakshar-pahili-welanti.png","./../assets/mulakshar-dusri-welanti.png":"assets/mulakshar-dusri-welanti.png","./../assets/mulakshar-pahila-ukar.png":"assets/mulakshar-pahila-ukar.png","./../assets/mulakshar-dusra-ukar.png":"assets/mulakshar-dusra-ukar.png","./../assets/mulakshar-ek-matra.png":"assets/mulakshar-ek-matra.png","./../assets/mulakshar-don-matra.png":"assets/mulakshar-don-matra.png","./../assets/mulakshar-kana-ek-matra.png":"assets/mulakshar-kana-ek-matra.png","./../assets/mulakshar-kana-don-matra.png":"assets/mulakshar-kana-don-matra.png","./../assets/mulakshar-anuswar.png":"assets/mulakshar-anuswar.png","./../assets/mulakshar-ardhchandr.png":"assets/mulakshar-ardhchandr.png","./../assets/mulakshar-kana-ardhchandr.png":"assets/mulakshar-kana-ardhchandr.png","./../assets/mulakshar-wisarg.png":"assets/mulakshar-wisarg.png","./../assets/eng-listen-letters.png":"assets/eng-listen-letters.png","./../assets/eng-listen-small-letters.png":"assets/eng-listen-small-letters.png","./../assets/eng-listen-number.png":"assets/eng-listen-number.png","./../assets/eng-listen-1to50.png":"assets/eng-listen-1to50.png","./../assets/eng-listen-1to100.png":"assets/eng-listen-1to100.png"}],"components/NavBar.tsx":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -105640,9 +105649,12 @@ var InteractiveItem = function InteractiveItem(props) {
   };
 
   var handleAudioStream = function handleAudioStream(isAvailable, languageId, audio) {
+    var hostPrefix = "https://raw.githubusercontent.com/nitinnaikwadi1/unnat/master/audio/";
+    if (languageId === 1) hostPrefix = hostPrefix + "mar/";else hostPrefix = hostPrefix + "eng/";
+
     if (isAvailable) {
       var Sounds = new _howler.Howl({
-        src: [audio]
+        src: [hostPrefix + audio + ".mp3"]
       });
       Sounds.play();
     }
@@ -105721,15 +105733,15 @@ module.exports = {
   "data": [{
     "id": "1",
     "text": "अ",
-    "audio": "https://raw.githubusercontent.com/nitinnaikwadi1/unnat/master/1-a.20e0e7c0.mp3"
+    "audio": "1-a"
   }, {
     "id": "2",
     "text": "आ",
-    "audio": "./../audio/mar/2-aa.mp3"
+    "audio": "2-aa"
   }, {
     "id": "3",
     "text": "इ",
-    "audio": "3-e.mp3"
+    "audio": "3-e"
   }, {
     "id": "4",
     "text": "ई",
@@ -106419,7 +106431,7 @@ module.exports = {
   "data": [{
     "id": "1",
     "text": "A",
-    "audio": "https://raw.githubusercontent.com/nitinnaikwadi1/unnat/master/audio/eng/a.mp3"
+    "audio": "a"
   }, {
     "id": "2",
     "text": "B",
@@ -106520,6 +106532,114 @@ module.exports = {
     "id": "26",
     "text": "Z",
     "audio": "z"
+  }]
+};
+},{}],"data/small-abcd.json":[function(require,module,exports) {
+module.exports = {
+  "data": [{
+    "id": "1",
+    "text": "a",
+    "audio": "small-a"
+  }, {
+    "id": "2",
+    "text": "b",
+    "audio": "small-b"
+  }, {
+    "id": "3",
+    "text": "c",
+    "audio": "small-c"
+  }, {
+    "id": "4",
+    "text": "d",
+    "audio": "small-d"
+  }, {
+    "id": "5",
+    "text": "e",
+    "audio": "small-e"
+  }, {
+    "id": "6",
+    "text": "f",
+    "audio": "small-f"
+  }, {
+    "id": "7",
+    "text": "g",
+    "audio": "small-g"
+  }, {
+    "id": "8",
+    "text": "h",
+    "audio": "small-h"
+  }, {
+    "id": "9",
+    "text": "i",
+    "audio": "small-i"
+  }, {
+    "id": "10",
+    "text": "j",
+    "audio": "small-j"
+  }, {
+    "id": "11",
+    "text": "k",
+    "audio": "small-k"
+  }, {
+    "id": "12",
+    "text": "l",
+    "audio": "small-l"
+  }, {
+    "id": "13",
+    "text": "m",
+    "audio": "small-m"
+  }, {
+    "id": "14",
+    "text": "n",
+    "audio": "small-n"
+  }, {
+    "id": "15",
+    "text": "o",
+    "audio": "small-o"
+  }, {
+    "id": "16",
+    "text": "p",
+    "audio": "small-p"
+  }, {
+    "id": "17",
+    "text": "q",
+    "audio": "small-q"
+  }, {
+    "id": "18",
+    "text": "r",
+    "audio": "small-r"
+  }, {
+    "id": "19",
+    "text": "s",
+    "audio": "small-s"
+  }, {
+    "id": "20",
+    "text": "t",
+    "audio": "small-t"
+  }, {
+    "id": "21",
+    "text": "u",
+    "audio": "small-u"
+  }, {
+    "id": "22",
+    "text": "v",
+    "audio": "small-v"
+  }, {
+    "id": "23",
+    "text": "w",
+    "audio": "small-w"
+  }, {
+    "id": "24",
+    "text": "x",
+    "audio": "small-x"
+  }, {
+    "id": "25",
+    "text": "y",
+    "audio": "small-y"
+  }, {
+    "id": "26",
+    "text": "z",
+    "audio": "small-z"
   }]
 };
 },{}],"data/eng-numbers.json":[function(require,module,exports) {
@@ -107749,143 +107869,143 @@ module.exports = {
   "data": [{
     "id": "1",
     "text": "के",
-    "audio": "1-a"
+    "audio": "1-ke"
   }, {
     "id": "2",
     "text": "खे",
-    "audio": "2-aa"
+    "audio": "2-khe"
   }, {
     "id": "3",
     "text": "गे",
-    "audio": "3-e"
+    "audio": "3-ge"
   }, {
     "id": "4",
     "text": "घे",
-    "audio": "4-ie"
+    "audio": "4-ghe"
   }, {
     "id": "5",
     "text": "चे",
-    "audio": "5-u"
+    "audio": "5-che"
   }, {
     "id": "6",
     "text": "छे",
-    "audio": "6-uu"
+    "audio": "6-chey"
   }, {
     "id": "7",
     "text": "जे",
-    "audio": "7-aye"
+    "audio": "7-je"
   }, {
     "id": "8",
     "text": "झे",
-    "audio": "8-aie"
+    "audio": "8-jhe"
   }, {
     "id": "9",
     "text": "ञे",
-    "audio": "9-oo"
+    "audio": "9-tre"
   }, {
     "id": "10",
     "text": "टे",
-    "audio": "10-au"
+    "audio": "10-te"
   }, {
     "id": "11",
     "text": "ठे",
-    "audio": "11-um"
+    "audio": "11-the"
   }, {
     "id": "12",
     "text": "डे",
-    "audio": "12-aha"
+    "audio": "12-de"
   }, {
     "id": "13",
     "text": "ढे",
-    "audio": "13-ka"
+    "audio": "13-dhe"
   }, {
     "id": "14",
     "text": "णे",
-    "audio": "14-kh"
+    "audio": "14-ne"
   }, {
     "id": "15",
     "text": "ते",
-    "audio": "15-ga"
+    "audio": "15-tey"
   }, {
     "id": "16",
     "text": "थे",
-    "audio": "16-gh"
+    "audio": "17-they"
   }, {
     "id": "17",
     "text": "दे",
-    "audio": "17-anga"
+    "audio": "16-dey"
   }, {
     "id": "18",
     "text": "धे",
-    "audio": "18-ch"
+    "audio": "18-dhey"
   }, {
     "id": "19",
     "text": "ने",
-    "audio": "19-cha"
+    "audio": "19-ney"
   }, {
     "id": "20",
     "text": "पे",
-    "audio": "20-ja"
+    "audio": "20-pe"
   }, {
     "id": "21",
     "text": "फे",
-    "audio": "21-jha"
+    "audio": "21-phe"
   }, {
     "id": "22",
     "text": "बे",
-    "audio": "22-tra"
+    "audio": "22-be"
   }, {
     "id": "23",
     "text": "भे",
-    "audio": "23-ta"
+    "audio": "23-bhe"
   }, {
     "id": "24",
     "text": "मे",
-    "audio": "24-tha"
+    "audio": "24-mey"
   }, {
     "id": "25",
     "text": "ये",
-    "audio": "25-da"
+    "audio": "25-ye"
   }, {
     "id": "26",
     "text": "रे",
-    "audio": "26-dha"
+    "audio": "26-rey"
   }, {
     "id": "27",
     "text": "ले",
-    "audio": "27-na"
+    "audio": "27-ley"
   }, {
     "id": "28",
     "text": "वे",
-    "audio": "28-ta"
+    "audio": "28-wey"
   }, {
     "id": "29",
     "text": "शे",
-    "audio": "29-tha"
+    "audio": "29-shey"
   }, {
     "id": "30",
     "text": "षे",
-    "audio": "30-da"
+    "audio": "30-sheye"
   }, {
     "id": "31",
     "text": "से",
-    "audio": "31-dha"
+    "audio": "31-sey"
   }, {
     "id": "32",
     "text": "हे",
-    "audio": "32-naa"
+    "audio": "32-hay"
   }, {
     "id": "33",
     "text": "ळे",
-    "audio": "33-pa"
+    "audio": "33-aley"
   }, {
     "id": "34",
     "text": "क्षे",
-    "audio": "34-pha"
+    "audio": "34-kshey"
   }, {
     "id": "35",
     "text": "ज्ञे",
-    "audio": "35-ba"
+    "audio": "35-dney"
   }]
 };
 },{}],"data/mulakshar-don-matra.json":[function(require,module,exports) {
@@ -108035,145 +108155,149 @@ module.exports = {
 },{}],"data/mulakshar-ek-kana-ek-matra.json":[function(require,module,exports) {
 module.exports = {
   "data": [{
+    "id": "0",
+    "text": "ओ",
+    "audio": "0-oo"
+  }, {
     "id": "1",
     "text": "को",
-    "audio": "1-a"
+    "audio": "1-ko"
   }, {
     "id": "2",
     "text": "खो",
-    "audio": "2-aa"
+    "audio": "2-kho"
   }, {
     "id": "3",
     "text": "गो",
-    "audio": "3-e"
+    "audio": "3-go"
   }, {
     "id": "4",
     "text": "घो",
-    "audio": "4-ie"
+    "audio": "4-gho"
   }, {
     "id": "5",
     "text": "चो",
-    "audio": "5-u"
+    "audio": "5-cho"
   }, {
     "id": "6",
     "text": "छो",
-    "audio": "6-uu"
+    "audio": "6-chho"
   }, {
     "id": "7",
     "text": "जो",
-    "audio": "7-aye"
+    "audio": "7-jo"
   }, {
     "id": "8",
     "text": "झो",
-    "audio": "8-aie"
+    "audio": "8-jho"
   }, {
     "id": "9",
     "text": "ञो",
-    "audio": "9-oo"
+    "audio": "9-tro"
   }, {
     "id": "10",
     "text": "टो",
-    "audio": "10-au"
+    "audio": "10-to"
   }, {
     "id": "11",
     "text": "ठो",
-    "audio": "11-um"
+    "audio": "11-tho"
   }, {
     "id": "12",
     "text": "डो",
-    "audio": "12-aha"
+    "audio": "12-do"
   }, {
     "id": "13",
     "text": "ढो",
-    "audio": "13-ka"
+    "audio": "13-dho"
   }, {
     "id": "14",
     "text": "णो",
-    "audio": "14-kh"
+    "audio": "14-no"
   }, {
     "id": "15",
     "text": "तो",
-    "audio": "15-ga"
+    "audio": "15-to"
   }, {
     "id": "16",
     "text": "थो",
-    "audio": "16-gh"
+    "audio": "16-tho"
   }, {
     "id": "17",
     "text": "दो",
-    "audio": "17-anga"
+    "audio": "17-doo"
   }, {
     "id": "18",
     "text": "धो",
-    "audio": "18-ch"
+    "audio": "18-dhoo"
   }, {
     "id": "19",
     "text": "नो",
-    "audio": "19-cha"
+    "audio": "19-noo"
   }, {
     "id": "20",
     "text": "पो",
-    "audio": "20-ja"
+    "audio": "20-po"
   }, {
     "id": "21",
     "text": "फो",
-    "audio": "21-jha"
+    "audio": "21-pho"
   }, {
     "id": "22",
     "text": "बो",
-    "audio": "22-tra"
+    "audio": "22-bo"
   }, {
     "id": "23",
     "text": "भो",
-    "audio": "23-ta"
+    "audio": "23-bho"
   }, {
     "id": "24",
     "text": "मो",
-    "audio": "24-tha"
+    "audio": "24-mo"
   }, {
     "id": "25",
     "text": "यो",
-    "audio": "25-da"
+    "audio": "25-yo"
   }, {
     "id": "26",
     "text": "रो",
-    "audio": "26-dha"
+    "audio": "26-ro"
   }, {
     "id": "27",
     "text": "लो",
-    "audio": "27-na"
+    "audio": "27-lo"
   }, {
     "id": "28",
     "text": "वो",
-    "audio": "28-ta"
+    "audio": "28-wo"
   }, {
     "id": "29",
     "text": "शो",
-    "audio": "29-tha"
+    "audio": "29-sho"
   }, {
     "id": "30",
     "text": "षो",
-    "audio": "30-da"
+    "audio": "30-shoo"
   }, {
     "id": "31",
     "text": "सो",
-    "audio": "31-dha"
+    "audio": "31-so"
   }, {
     "id": "32",
     "text": "हो",
-    "audio": "32-naa"
+    "audio": "32-ho"
   }, {
     "id": "33",
     "text": "ळो",
-    "audio": "33-pa"
+    "audio": "33-alo"
   }, {
     "id": "34",
     "text": "क्षो",
-    "audio": "34-pha"
+    "audio": "34-ksho"
   }, {
     "id": "35",
     "text": "ज्ञो",
-    "audio": "35-ba"
+    "audio": "35-dnyo"
   }]
 };
 },{}],"data/mulakshar-ek-kana-don-matra.json":[function(require,module,exports) {
@@ -108323,145 +108447,149 @@ module.exports = {
 },{}],"data/mulakshar-anuswar.json":[function(require,module,exports) {
 module.exports = {
   "data": [{
+    "id": "0",
+    "text": "अं",
+    "audio": "1-um"
+  }, {
     "id": "1",
     "text": "कं",
-    "audio": "1-a"
+    "audio": "2-km"
   }, {
     "id": "2",
     "text": "खं",
-    "audio": "2-aa"
+    "audio": "3-khm"
   }, {
     "id": "3",
     "text": "गं",
-    "audio": "3-e"
+    "audio": "4-gam"
   }, {
     "id": "4",
     "text": "घं",
-    "audio": "4-ie"
+    "audio": "5-gham"
   }, {
     "id": "5",
     "text": "चं",
-    "audio": "5-u"
+    "audio": "6-cham"
   }, {
     "id": "6",
     "text": "छं",
-    "audio": "6-uu"
+    "audio": "7-chhum"
   }, {
     "id": "7",
     "text": "जं",
-    "audio": "7-aye"
+    "audio": "8-jm"
   }, {
     "id": "8",
     "text": "झं",
-    "audio": "8-aie"
+    "audio": "9-zhm"
   }, {
     "id": "9",
     "text": "ञं",
-    "audio": "9-oo"
+    "audio": "10-trm"
   }, {
     "id": "10",
     "text": "टं",
-    "audio": "10-au"
+    "audio": "11-tam"
   }, {
     "id": "11",
     "text": "ठं",
-    "audio": "11-um"
+    "audio": "12-thum"
   }, {
     "id": "12",
     "text": "डं",
-    "audio": "12-aha"
+    "audio": "13-dum"
   }, {
     "id": "13",
     "text": "ढं",
-    "audio": "13-ka"
+    "audio": "14-dhum"
   }, {
     "id": "14",
     "text": "णं",
-    "audio": "14-kh"
+    "audio": "15-num"
   }, {
     "id": "15",
     "text": "तं",
-    "audio": "15-ga"
+    "audio": "16-tum"
   }, {
     "id": "16",
     "text": "थं",
-    "audio": "16-gh"
+    "audio": "17-thum"
   }, {
     "id": "17",
     "text": "दं",
-    "audio": "17-anga"
+    "audio": "18-dumm"
   }, {
     "id": "18",
     "text": "धं",
-    "audio": "18-ch"
+    "audio": "19-dhum"
   }, {
     "id": "19",
     "text": "नं",
-    "audio": "19-cha"
+    "audio": "20-numm"
   }, {
     "id": "20",
     "text": "पं",
-    "audio": "20-ja"
+    "audio": "21-pum"
   }, {
     "id": "21",
     "text": "फं",
-    "audio": "21-jha"
+    "audio": "22-phum"
   }, {
     "id": "22",
     "text": "बं",
-    "audio": "22-tra"
+    "audio": "23-bum"
   }, {
     "id": "23",
     "text": "भं",
-    "audio": "23-ta"
+    "audio": "24-bhum"
   }, {
     "id": "24",
     "text": "मं",
-    "audio": "24-tha"
+    "audio": "25-mum"
   }, {
     "id": "25",
     "text": "यं",
-    "audio": "25-da"
+    "audio": "26-yum"
   }, {
     "id": "26",
     "text": "रं",
-    "audio": "26-dha"
+    "audio": "27-ram"
   }, {
     "id": "27",
     "text": "लं",
-    "audio": "27-na"
+    "audio": "28-lum"
   }, {
     "id": "28",
     "text": "वं",
-    "audio": "28-ta"
+    "audio": "29-vam"
   }, {
     "id": "29",
     "text": "शं",
-    "audio": "29-tha"
+    "audio": "30-shum"
   }, {
     "id": "30",
     "text": "षं",
-    "audio": "30-da"
+    "audio": "31-sham"
   }, {
     "id": "31",
     "text": "सं",
-    "audio": "31-dha"
+    "audio": "32-sum"
   }, {
     "id": "32",
     "text": "हं",
-    "audio": "32-naa"
+    "audio": "33-hum"
   }, {
     "id": "33",
     "text": "ळं",
-    "audio": "33-pa"
+    "audio": "34-lum"
   }, {
     "id": "34",
     "text": "क्षं",
-    "audio": "34-pha"
+    "audio": "35-kshm"
   }, {
     "id": "35",
     "text": "ज्ञं",
-    "audio": "35-ba"
+    "audio": "36-dnym"
   }]
 };
 },{}],"data/mulakshar-ardhchandr.json":[function(require,module,exports) {
@@ -108926,6 +109054,8 @@ var mar1to100 = _interopRequireWildcard(require("./../data/mar-1to100.json"));
 
 var abcd = _interopRequireWildcard(require("./../data/abcd.json"));
 
+var smallAbcd = _interopRequireWildcard(require("./../data/small-abcd.json"));
+
 var engNumbers = _interopRequireWildcard(require("./../data/eng-numbers.json"));
 
 var eng1to50 = _interopRequireWildcard(require("./../data/eng-1to50.json"));
@@ -109111,11 +109241,16 @@ var InteractiveItem = function InteractiveItem(props) {
     }
 
     if (parentId === 2 && currentContentId === 2) {
+      setContentTitle(_reactIntlUniversal.default.get('ENGLISH_SMALL_ALPHABETS') + " " + _reactIntlUniversal.default.get('LANGUAGE_SPEAK_TITLE'));
+      return smallAbcd.data;
+    }
+
+    if (parentId === 2 && currentContentId === 3) {
       setContentTitle(_reactIntlUniversal.default.get('ENGLISH_NUMBERS') + " " + _reactIntlUniversal.default.get('LANGUAGE_SPEAK_TITLE'));
       return engNumbers.data;
     }
 
-    if (parentId === 2 && currentContentId === 3) {
+    if (parentId === 2 && currentContentId === 4) {
       setContentTitle(_reactIntlUniversal.default.get('ENGLISH_NUMBERS_1_TO_50') + " " + _reactIntlUniversal.default.get('LANGUAGE_SPEAK_TITLE'));
       return eng1to50.data;
     }
@@ -109152,7 +109287,7 @@ var InteractiveItem = function InteractiveItem(props) {
 
 var _default = InteractiveItem;
 exports.default = _default;
-},{"react":"../node_modules/react/index.js","@material-ui/core/CardActionArea":"../node_modules/@material-ui/core/esm/CardActionArea/index.js","@material-ui/core/styles":"../node_modules/@material-ui/core/esm/styles/index.js","@material-ui/core/Card":"../node_modules/@material-ui/core/esm/Card/index.js","@material-ui/core/CardMedia":"../node_modules/@material-ui/core/esm/CardMedia/index.js","./InteractiveContent":"components/InteractiveContent.tsx","./../data/mulakshar.json":"data/mulakshar.json","./../data/mar-ank.json":"data/mar-ank.json","./../data/mar-1to50.json":"data/mar-1to50.json","./../data/mar-1to100.json":"data/mar-1to100.json","./../data/abcd.json":"data/abcd.json","./../data/eng-numbers.json":"data/eng-numbers.json","./../data/eng-1to50.json":"data/eng-1to50.json","./../data/eng-1to100.json":"data/eng-1to100.json","./../data/mulakshar-kana.json":"data/mulakshar-kana.json","./../data/mulakshar-pahili-welanti.json":"data/mulakshar-pahili-welanti.json","./../data/mulakshar-dusri-welanti.json":"data/mulakshar-dusri-welanti.json","./../data/mulakshar-pahila-ukar.json":"data/mulakshar-pahila-ukar.json","./../data/mulakshar-dusra-ukar.json":"data/mulakshar-dusra-ukar.json","./../data/mulakshar-ek-matra.json":"data/mulakshar-ek-matra.json","./../data/mulakshar-don-matra.json":"data/mulakshar-don-matra.json","./../data/mulakshar-ek-kana-ek-matra.json":"data/mulakshar-ek-kana-ek-matra.json","./../data/mulakshar-ek-kana-don-matra.json":"data/mulakshar-ek-kana-don-matra.json","./../data/mulakshar-anuswar.json":"data/mulakshar-anuswar.json","./../data/mulakshar-ardhchandr.json":"data/mulakshar-ardhchandr.json","./../data/mulakshar-kana-ardhchandr.json":"data/mulakshar-kana-ardhchandr.json","./../data/mulakshar-wisarg.json":"data/mulakshar-wisarg.json","react-intl-universal":"../node_modules/react-intl-universal/lib/index.js"}],"components/InteractiveDashboard.tsx":[function(require,module,exports) {
+},{"react":"../node_modules/react/index.js","@material-ui/core/CardActionArea":"../node_modules/@material-ui/core/esm/CardActionArea/index.js","@material-ui/core/styles":"../node_modules/@material-ui/core/esm/styles/index.js","@material-ui/core/Card":"../node_modules/@material-ui/core/esm/Card/index.js","@material-ui/core/CardMedia":"../node_modules/@material-ui/core/esm/CardMedia/index.js","./InteractiveContent":"components/InteractiveContent.tsx","./../data/mulakshar.json":"data/mulakshar.json","./../data/mar-ank.json":"data/mar-ank.json","./../data/mar-1to50.json":"data/mar-1to50.json","./../data/mar-1to100.json":"data/mar-1to100.json","./../data/abcd.json":"data/abcd.json","./../data/small-abcd.json":"data/small-abcd.json","./../data/eng-numbers.json":"data/eng-numbers.json","./../data/eng-1to50.json":"data/eng-1to50.json","./../data/eng-1to100.json":"data/eng-1to100.json","./../data/mulakshar-kana.json":"data/mulakshar-kana.json","./../data/mulakshar-pahili-welanti.json":"data/mulakshar-pahili-welanti.json","./../data/mulakshar-dusri-welanti.json":"data/mulakshar-dusri-welanti.json","./../data/mulakshar-pahila-ukar.json":"data/mulakshar-pahila-ukar.json","./../data/mulakshar-dusra-ukar.json":"data/mulakshar-dusra-ukar.json","./../data/mulakshar-ek-matra.json":"data/mulakshar-ek-matra.json","./../data/mulakshar-don-matra.json":"data/mulakshar-don-matra.json","./../data/mulakshar-ek-kana-ek-matra.json":"data/mulakshar-ek-kana-ek-matra.json","./../data/mulakshar-ek-kana-don-matra.json":"data/mulakshar-ek-kana-don-matra.json","./../data/mulakshar-anuswar.json":"data/mulakshar-anuswar.json","./../data/mulakshar-ardhchandr.json":"data/mulakshar-ardhchandr.json","./../data/mulakshar-kana-ardhchandr.json":"data/mulakshar-kana-ardhchandr.json","./../data/mulakshar-wisarg.json":"data/mulakshar-wisarg.json","react-intl-universal":"../node_modules/react-intl-universal/lib/index.js"}],"components/InteractiveDashboard.tsx":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -109244,7 +109379,1424 @@ function (_super) {
 
 var _default = InteractiveDashboard;
 exports.default = _default;
-},{"react":"../node_modules/react/index.js","@material-ui/core/Grid":"../node_modules/@material-ui/core/esm/Grid/index.js","./InteractiveItem":"components/InteractiveItem.tsx"}],"locales/en-US.json":[function(require,module,exports) {
+},{"react":"../node_modules/react/index.js","@material-ui/core/Grid":"../node_modules/@material-ui/core/esm/Grid/index.js","./InteractiveItem":"components/InteractiveItem.tsx"}],"../node_modules/react-ga/dist/esm/utils/console/warn.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = warn;
+
+function warn(s) {
+  console.warn('[react-ga]', s);
+}
+},{}],"../node_modules/react-ga/dist/esm/components/OutboundLink.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _react = _interopRequireWildcard(require("react"));
+
+var _propTypes = _interopRequireDefault(require("prop-types"));
+
+var _warn = _interopRequireDefault(require("../utils/console/warn"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _getRequireWildcardCache() { if (typeof WeakMap !== "function") return null; var cache = new WeakMap(); _getRequireWildcardCache = function () { return cache; }; return cache; }
+
+function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } if (obj === null || typeof obj !== "object" && typeof obj !== "function") { return { default: obj }; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
+
+function _typeof(obj) {
+  "@babel/helpers - typeof";
+
+  if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") {
+    _typeof = function _typeof(obj) {
+      return typeof obj;
+    };
+  } else {
+    _typeof = function _typeof(obj) {
+      return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj;
+    };
+  }
+
+  return _typeof(obj);
+}
+
+function ownKeys(object, enumerableOnly) {
+  var keys = Object.keys(object);
+
+  if (Object.getOwnPropertySymbols) {
+    var symbols = Object.getOwnPropertySymbols(object);
+    if (enumerableOnly) symbols = symbols.filter(function (sym) {
+      return Object.getOwnPropertyDescriptor(object, sym).enumerable;
+    });
+    keys.push.apply(keys, symbols);
+  }
+
+  return keys;
+}
+
+function _objectSpread(target) {
+  for (var i = 1; i < arguments.length; i++) {
+    var source = arguments[i] != null ? arguments[i] : {};
+
+    if (i % 2) {
+      ownKeys(Object(source), true).forEach(function (key) {
+        _defineProperty(target, key, source[key]);
+      });
+    } else if (Object.getOwnPropertyDescriptors) {
+      Object.defineProperties(target, Object.getOwnPropertyDescriptors(source));
+    } else {
+      ownKeys(Object(source)).forEach(function (key) {
+        Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key));
+      });
+    }
+  }
+
+  return target;
+}
+
+function _objectWithoutProperties(source, excluded) {
+  if (source == null) return {};
+
+  var target = _objectWithoutPropertiesLoose(source, excluded);
+
+  var key, i;
+
+  if (Object.getOwnPropertySymbols) {
+    var sourceSymbolKeys = Object.getOwnPropertySymbols(source);
+
+    for (i = 0; i < sourceSymbolKeys.length; i++) {
+      key = sourceSymbolKeys[i];
+      if (excluded.indexOf(key) >= 0) continue;
+      if (!Object.prototype.propertyIsEnumerable.call(source, key)) continue;
+      target[key] = source[key];
+    }
+  }
+
+  return target;
+}
+
+function _objectWithoutPropertiesLoose(source, excluded) {
+  if (source == null) return {};
+  var target = {};
+  var sourceKeys = Object.keys(source);
+  var key, i;
+
+  for (i = 0; i < sourceKeys.length; i++) {
+    key = sourceKeys[i];
+    if (excluded.indexOf(key) >= 0) continue;
+    target[key] = source[key];
+  }
+
+  return target;
+}
+
+function _classCallCheck(instance, Constructor) {
+  if (!(instance instanceof Constructor)) {
+    throw new TypeError("Cannot call a class as a function");
+  }
+}
+
+function _defineProperties(target, props) {
+  for (var i = 0; i < props.length; i++) {
+    var descriptor = props[i];
+    descriptor.enumerable = descriptor.enumerable || false;
+    descriptor.configurable = true;
+    if ("value" in descriptor) descriptor.writable = true;
+    Object.defineProperty(target, descriptor.key, descriptor);
+  }
+}
+
+function _createClass(Constructor, protoProps, staticProps) {
+  if (protoProps) _defineProperties(Constructor.prototype, protoProps);
+  if (staticProps) _defineProperties(Constructor, staticProps);
+  return Constructor;
+}
+
+function _inherits(subClass, superClass) {
+  if (typeof superClass !== "function" && superClass !== null) {
+    throw new TypeError("Super expression must either be null or a function");
+  }
+
+  subClass.prototype = Object.create(superClass && superClass.prototype, {
+    constructor: {
+      value: subClass,
+      writable: true,
+      configurable: true
+    }
+  });
+  if (superClass) _setPrototypeOf(subClass, superClass);
+}
+
+function _setPrototypeOf(o, p) {
+  _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) {
+    o.__proto__ = p;
+    return o;
+  };
+
+  return _setPrototypeOf(o, p);
+}
+
+function _createSuper(Derived) {
+  var hasNativeReflectConstruct = _isNativeReflectConstruct();
+
+  return function _createSuperInternal() {
+    var Super = _getPrototypeOf(Derived),
+        result;
+
+    if (hasNativeReflectConstruct) {
+      var NewTarget = _getPrototypeOf(this).constructor;
+
+      result = Reflect.construct(Super, arguments, NewTarget);
+    } else {
+      result = Super.apply(this, arguments);
+    }
+
+    return _possibleConstructorReturn(this, result);
+  };
+}
+
+function _possibleConstructorReturn(self, call) {
+  if (call && (_typeof(call) === "object" || typeof call === "function")) {
+    return call;
+  }
+
+  return _assertThisInitialized(self);
+}
+
+function _assertThisInitialized(self) {
+  if (self === void 0) {
+    throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
+  }
+
+  return self;
+}
+
+function _isNativeReflectConstruct() {
+  if (typeof Reflect === "undefined" || !Reflect.construct) return false;
+  if (Reflect.construct.sham) return false;
+  if (typeof Proxy === "function") return true;
+
+  try {
+    Date.prototype.toString.call(Reflect.construct(Date, [], function () {}));
+    return true;
+  } catch (e) {
+    return false;
+  }
+}
+
+function _getPrototypeOf(o) {
+  _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) {
+    return o.__proto__ || Object.getPrototypeOf(o);
+  };
+  return _getPrototypeOf(o);
+}
+
+function _defineProperty(obj, key, value) {
+  if (key in obj) {
+    Object.defineProperty(obj, key, {
+      value: value,
+      enumerable: true,
+      configurable: true,
+      writable: true
+    });
+  } else {
+    obj[key] = value;
+  }
+
+  return obj;
+}
+
+var NEWTAB = '_blank';
+var MIDDLECLICK = 1;
+
+var OutboundLink = /*#__PURE__*/function (_Component) {
+  _inherits(OutboundLink, _Component);
+
+  var _super = _createSuper(OutboundLink);
+
+  function OutboundLink() {
+    var _this;
+
+    _classCallCheck(this, OutboundLink);
+
+    for (var _len = arguments.length, args = new Array(_len), _key = 0; _key < _len; _key++) {
+      args[_key] = arguments[_key];
+    }
+
+    _this = _super.call.apply(_super, [this].concat(args));
+
+    _defineProperty(_assertThisInitialized(_this), "handleClick", function (event) {
+      var _this$props = _this.props,
+          target = _this$props.target,
+          eventLabel = _this$props.eventLabel,
+          to = _this$props.to,
+          onClick = _this$props.onClick,
+          trackerNames = _this$props.trackerNames;
+      var eventMeta = {
+        label: eventLabel
+      };
+      var sameTarget = target !== NEWTAB;
+      var normalClick = !(event.ctrlKey || event.shiftKey || event.metaKey || event.button === MIDDLECLICK);
+
+      if (sameTarget && normalClick) {
+        event.preventDefault();
+        OutboundLink.trackLink(eventMeta, function () {
+          window.location.href = to;
+        }, trackerNames);
+      } else {
+        OutboundLink.trackLink(eventMeta, function () {}, trackerNames);
+      }
+
+      if (onClick) {
+        onClick(event);
+      }
+    });
+
+    return _this;
+  }
+
+  _createClass(OutboundLink, [{
+    key: "render",
+    value: function render() {
+      var _this$props2 = this.props,
+          href = _this$props2.to,
+          target = _this$props2.target,
+          oldProps = _objectWithoutProperties(_this$props2, ["to", "target"]);
+
+      var props = _objectSpread(_objectSpread({}, oldProps), {}, {
+        target: target,
+        href: href,
+        onClick: this.handleClick
+      });
+
+      if (target === NEWTAB) {
+        props.rel = 'noopener noreferrer';
+      }
+
+      delete props.eventLabel;
+      delete props.trackerNames;
+      return /*#__PURE__*/_react.default.createElement('a', props);
+    }
+  }]);
+
+  return OutboundLink;
+}(_react.Component);
+
+exports.default = OutboundLink;
+
+_defineProperty(OutboundLink, "trackLink", function () {
+  (0, _warn.default)('ga tracking not enabled');
+});
+
+OutboundLink.propTypes = {
+  eventLabel: _propTypes.default.string.isRequired,
+  target: _propTypes.default.string,
+  to: _propTypes.default.string,
+  onClick: _propTypes.default.func,
+  trackerNames: _propTypes.default.arrayOf(_propTypes.default.string)
+};
+OutboundLink.defaultProps = {
+  target: null,
+  to: null,
+  onClick: null,
+  trackerNames: null
+};
+},{"react":"../node_modules/react/index.js","prop-types":"../node_modules/prop-types/index.js","../utils/console/warn":"../node_modules/react-ga/dist/esm/utils/console/warn.js"}],"../node_modules/react-ga/dist/esm/utils/mightBeEmail.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = mightBeEmail;
+
+// See if s could be an email address. We don't want to send personal data like email.
+// https://support.google.com/analytics/answer/2795983?hl=en
+function mightBeEmail(s) {
+  // There's no point trying to validate rfc822 fully, just look for ...@...
+  return typeof s === 'string' && s.indexOf('@') !== -1;
+}
+},{}],"../node_modules/react-ga/dist/esm/utils/redactEmail.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = redactEmail;
+
+var _warn = _interopRequireDefault(require("./console/warn"));
+
+var _mightBeEmail = _interopRequireDefault(require("./mightBeEmail"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var redacted = 'REDACTED (Potential Email Address)';
+
+function redactEmail(string) {
+  if ((0, _mightBeEmail.default)(string)) {
+    (0, _warn.default)('This arg looks like an email address, redacting.');
+    return redacted;
+  }
+
+  return string;
+}
+},{"./console/warn":"../node_modules/react-ga/dist/esm/utils/console/warn.js","./mightBeEmail":"../node_modules/react-ga/dist/esm/utils/mightBeEmail.js"}],"../node_modules/react-ga/dist/esm/utils/trim.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = trim;
+
+// GA strings need to have leading/trailing whitespace trimmed, and not all
+// browsers have String.prototoype.trim().
+function trim(s) {
+  return s && s.toString().replace(/^\s+|\s+$/g, '');
+}
+},{}],"../node_modules/react-ga/dist/esm/utils/toTitleCase.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = toTitleCase;
+
+var _trim = _interopRequireDefault(require("./trim"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+/**
+ * To Title Case 2.1 - http://individed.com/code/to-title-case/
+ * Copyright 2008-2013 David Gouch. Licensed under the MIT License.
+ * https://github.com/gouch/to-title-case
+ */
+var smallWords = /^(a|an|and|as|at|but|by|en|for|if|in|nor|of|on|or|per|the|to|vs?\.?|via)$/i; // test
+
+function toTitleCase(string) {
+  return (0, _trim.default)(string).replace(/[A-Za-z0-9\u00C0-\u00FF]+[^\s-]*/g, function (match, index, title) {
+    if (index > 0 && index + match.length !== title.length && match.search(smallWords) > -1 && title.charAt(index - 2) !== ':' && (title.charAt(index + match.length) !== '-' || title.charAt(index - 1) === '-') && title.charAt(index - 1).search(/[^\s-]/) < 0) {
+      return match.toLowerCase();
+    }
+
+    if (match.substr(1).search(/[A-Z]|\../) > -1) {
+      return match;
+    }
+
+    return match.charAt(0).toUpperCase() + match.substr(1);
+  });
+}
+},{"./trim":"../node_modules/react-ga/dist/esm/utils/trim.js"}],"../node_modules/react-ga/dist/esm/utils/format.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = format;
+
+var _redactEmail = _interopRequireDefault(require("./redactEmail"));
+
+var _toTitleCase = _interopRequireDefault(require("./toTitleCase"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function format() {
+  var s = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : '';
+  var titleCase = arguments.length > 1 ? arguments[1] : undefined;
+  var redactingEmail = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : true;
+
+  var _str = s || '';
+
+  if (titleCase) {
+    _str = (0, _toTitleCase.default)(s);
+  }
+
+  if (redactingEmail) {
+    _str = (0, _redactEmail.default)(_str);
+  }
+
+  return _str;
+}
+},{"./redactEmail":"../node_modules/react-ga/dist/esm/utils/redactEmail.js","./toTitleCase":"../node_modules/react-ga/dist/esm/utils/toTitleCase.js"}],"../node_modules/react-ga/dist/esm/utils/removeLeadingSlash.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = removeLeadingSlash;
+
+function removeLeadingSlash(string) {
+  if (string.substring(0, 1) === '/') {
+    return string.substring(1);
+  }
+
+  return string;
+}
+},{}],"../node_modules/react-ga/dist/esm/utils/loadGA.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = _default;
+
+function _default(options) {
+  var gaAddress = 'https://www.google-analytics.com/analytics.js';
+
+  if (options && options.gaAddress) {
+    gaAddress = options.gaAddress;
+  } else if (options && options.debug) {
+    gaAddress = 'https://www.google-analytics.com/analytics_debug.js';
+  }
+
+  var onerror = options && options.onerror; // https://developers.google.com/analytics/devguides/collection/analyticsjs/
+
+  /* eslint-disable */
+
+  (function (i, s, o, g, r, a, m) {
+    i['GoogleAnalyticsObject'] = r;
+    i[r] = i[r] || function () {
+      (i[r].q = i[r].q || []).push(arguments);
+    }, i[r].l = 1 * new Date();
+    a = s.createElement(o), m = s.getElementsByTagName(o)[0];
+    a.async = 1;
+    a.src = g;
+    a.onerror = onerror;
+    m.parentNode.insertBefore(a, m);
+  })(window, document, 'script', gaAddress, 'ga');
+  /* eslint-enable */
+
+}
+},{}],"../node_modules/react-ga/dist/esm/utils/console/log.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = log;
+
+function log(s) {
+  console.info('[react-ga]', s);
+}
+},{}],"../node_modules/react-ga/dist/esm/utils/testModeAPI.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = exports.gaCalls = void 0;
+var gaCalls = [];
+exports.gaCalls = gaCalls;
+var _default = {
+  calls: gaCalls,
+  ga: function ga() {
+    for (var _len = arguments.length, args = new Array(_len), _key = 0; _key < _len; _key++) {
+      args[_key] = arguments[_key];
+    }
+
+    gaCalls.push([].concat(args));
+  },
+  resetCalls: function resetCalls() {
+    gaCalls.length = 0;
+  }
+};
+exports.default = _default;
+},{}],"../node_modules/react-ga/dist/esm/core.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.addTrackers = addTrackers;
+exports.initialize = initialize;
+exports.ga = ga;
+exports.set = set;
+exports.send = send;
+exports.pageview = pageview;
+exports.modalview = modalview;
+exports.timing = timing;
+exports.event = event;
+exports.exception = exception;
+exports.outboundLink = outboundLink;
+exports.default = exports.testModeAPI = exports.plugin = void 0;
+
+var _format2 = _interopRequireDefault(require("./utils/format"));
+
+var _removeLeadingSlash = _interopRequireDefault(require("./utils/removeLeadingSlash"));
+
+var _trim = _interopRequireDefault(require("./utils/trim"));
+
+var _loadGA = _interopRequireDefault(require("./utils/loadGA"));
+
+var _warn = _interopRequireDefault(require("./utils/console/warn"));
+
+var _log = _interopRequireDefault(require("./utils/console/log"));
+
+var _testModeAPI = _interopRequireDefault(require("./utils/testModeAPI"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _objectWithoutProperties(source, excluded) {
+  if (source == null) return {};
+
+  var target = _objectWithoutPropertiesLoose(source, excluded);
+
+  var key, i;
+
+  if (Object.getOwnPropertySymbols) {
+    var sourceSymbolKeys = Object.getOwnPropertySymbols(source);
+
+    for (i = 0; i < sourceSymbolKeys.length; i++) {
+      key = sourceSymbolKeys[i];
+      if (excluded.indexOf(key) >= 0) continue;
+      if (!Object.prototype.propertyIsEnumerable.call(source, key)) continue;
+      target[key] = source[key];
+    }
+  }
+
+  return target;
+}
+
+function _objectWithoutPropertiesLoose(source, excluded) {
+  if (source == null) return {};
+  var target = {};
+  var sourceKeys = Object.keys(source);
+  var key, i;
+
+  for (i = 0; i < sourceKeys.length; i++) {
+    key = sourceKeys[i];
+    if (excluded.indexOf(key) >= 0) continue;
+    target[key] = source[key];
+  }
+
+  return target;
+}
+
+function ownKeys(object, enumerableOnly) {
+  var keys = Object.keys(object);
+
+  if (Object.getOwnPropertySymbols) {
+    var symbols = Object.getOwnPropertySymbols(object);
+    if (enumerableOnly) symbols = symbols.filter(function (sym) {
+      return Object.getOwnPropertyDescriptor(object, sym).enumerable;
+    });
+    keys.push.apply(keys, symbols);
+  }
+
+  return keys;
+}
+
+function _objectSpread(target) {
+  for (var i = 1; i < arguments.length; i++) {
+    var source = arguments[i] != null ? arguments[i] : {};
+
+    if (i % 2) {
+      ownKeys(Object(source), true).forEach(function (key) {
+        _defineProperty(target, key, source[key]);
+      });
+    } else if (Object.getOwnPropertyDescriptors) {
+      Object.defineProperties(target, Object.getOwnPropertyDescriptors(source));
+    } else {
+      ownKeys(Object(source)).forEach(function (key) {
+        Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key));
+      });
+    }
+  }
+
+  return target;
+}
+
+function _defineProperty(obj, key, value) {
+  if (key in obj) {
+    Object.defineProperty(obj, key, {
+      value: value,
+      enumerable: true,
+      configurable: true,
+      writable: true
+    });
+  } else {
+    obj[key] = value;
+  }
+
+  return obj;
+}
+
+function _typeof(obj) {
+  "@babel/helpers - typeof";
+
+  if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") {
+    _typeof = function _typeof(obj) {
+      return typeof obj;
+    };
+  } else {
+    _typeof = function _typeof(obj) {
+      return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj;
+    };
+  }
+
+  return _typeof(obj);
+}
+
+function _toConsumableArray(arr) {
+  return _arrayWithoutHoles(arr) || _iterableToArray(arr) || _unsupportedIterableToArray(arr) || _nonIterableSpread();
+}
+
+function _nonIterableSpread() {
+  throw new TypeError("Invalid attempt to spread non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.");
+}
+
+function _unsupportedIterableToArray(o, minLen) {
+  if (!o) return;
+  if (typeof o === "string") return _arrayLikeToArray(o, minLen);
+  var n = Object.prototype.toString.call(o).slice(8, -1);
+  if (n === "Object" && o.constructor) n = o.constructor.name;
+  if (n === "Map" || n === "Set") return Array.from(o);
+  if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen);
+}
+
+function _iterableToArray(iter) {
+  if (typeof Symbol !== "undefined" && Symbol.iterator in Object(iter)) return Array.from(iter);
+}
+
+function _arrayWithoutHoles(arr) {
+  if (Array.isArray(arr)) return _arrayLikeToArray(arr);
+}
+
+function _arrayLikeToArray(arr, len) {
+  if (len == null || len > arr.length) len = arr.length;
+
+  for (var i = 0, arr2 = new Array(len); i < len; i++) {
+    arr2[i] = arr[i];
+  }
+
+  return arr2;
+}
+/**
+ * React Google Analytics Module
+ *
+ * @package react-ga
+ * @author  Adam Lofting <adam@mozillafoundation.org>
+ *          Atul Varma <atul@mozillafoundation.org>
+ */
+
+/**
+ * Utilities
+ */
+
+
+var _isNotBrowser = typeof window === 'undefined' || typeof document === 'undefined';
+
+var _debug = false;
+var _titleCase = true;
+var _testMode = false;
+var _alwaysSendToDefaultTracker = true;
+var _redactEmail = true;
+
+var internalGa = function internalGa() {
+  var _window;
+
+  if (_testMode) return _testModeAPI.default.ga.apply(_testModeAPI.default, arguments);
+  if (_isNotBrowser) return false;
+  if (!window.ga) return (0, _warn.default)('ReactGA.initialize must be called first or GoogleAnalytics should be loaded manually');
+  return (_window = window).ga.apply(_window, arguments);
+};
+
+function _format(s) {
+  return (0, _format2.default)(s, _titleCase, _redactEmail);
+}
+
+function _gaCommand(trackerNames) {
+  for (var _len = arguments.length, args = new Array(_len > 1 ? _len - 1 : 0), _key = 1; _key < _len; _key++) {
+    args[_key - 1] = arguments[_key];
+  }
+
+  var command = args[0];
+
+  if (typeof internalGa === 'function') {
+    if (typeof command !== 'string') {
+      (0, _warn.default)('ga command must be a string');
+      return;
+    }
+
+    if (_alwaysSendToDefaultTracker || !Array.isArray(trackerNames)) internalGa.apply(void 0, args);
+
+    if (Array.isArray(trackerNames)) {
+      trackerNames.forEach(function (name) {
+        internalGa.apply(void 0, _toConsumableArray(["".concat(name, ".").concat(command)].concat(args.slice(1))));
+      });
+    }
+  }
+}
+
+function _initialize(gaTrackingID, options) {
+  if (!gaTrackingID) {
+    (0, _warn.default)('gaTrackingID is required in initialize()');
+    return;
+  }
+
+  if (options) {
+    if (options.debug && options.debug === true) {
+      _debug = true;
+    }
+
+    if (options.titleCase === false) {
+      _titleCase = false;
+    }
+
+    if (options.redactEmail === false) {
+      _redactEmail = false;
+    }
+
+    if (options.useExistingGa) {
+      return;
+    }
+  }
+
+  if (options && options.gaOptions) {
+    internalGa('create', gaTrackingID, options.gaOptions);
+  } else {
+    internalGa('create', gaTrackingID, 'auto');
+  }
+}
+
+function addTrackers(configsOrTrackingId, options) {
+  if (Array.isArray(configsOrTrackingId)) {
+    configsOrTrackingId.forEach(function (config) {
+      if (_typeof(config) !== 'object') {
+        (0, _warn.default)('All configs must be an object');
+        return;
+      }
+
+      _initialize(config.trackingId, config);
+    });
+  } else {
+    _initialize(configsOrTrackingId, options);
+  }
+
+  return true;
+}
+
+function initialize(configsOrTrackingId, options) {
+  if (options && options.testMode === true) {
+    _testMode = true;
+  } else {
+    if (_isNotBrowser) {
+      return;
+    }
+
+    if (!options || options.standardImplementation !== true) (0, _loadGA.default)(options);
+  }
+
+  _alwaysSendToDefaultTracker = options && typeof options.alwaysSendToDefaultTracker === 'boolean' ? options.alwaysSendToDefaultTracker : true;
+  addTrackers(configsOrTrackingId, options);
+}
+/**
+ * ga:
+ * Returns the original GA object.
+ */
+
+
+function ga() {
+  for (var _len2 = arguments.length, args = new Array(_len2), _key2 = 0; _key2 < _len2; _key2++) {
+    args[_key2] = arguments[_key2];
+  }
+
+  if (args.length > 0) {
+    internalGa.apply(void 0, args);
+
+    if (_debug) {
+      (0, _log.default)("called ga('arguments');");
+      (0, _log.default)("with arguments: ".concat(JSON.stringify(args)));
+    }
+  }
+
+  return window.ga;
+}
+/**
+ * set:
+ * GA tracker set method
+ * @param {Object} fieldsObject - a field/value pair or a group of field/value pairs on the tracker
+ * @param {Array} trackerNames - (optional) a list of extra trackers to run the command on
+ */
+
+
+function set(fieldsObject, trackerNames) {
+  if (!fieldsObject) {
+    (0, _warn.default)('`fieldsObject` is required in .set()');
+    return;
+  }
+
+  if (_typeof(fieldsObject) !== 'object') {
+    (0, _warn.default)('Expected `fieldsObject` arg to be an Object');
+    return;
+  }
+
+  if (Object.keys(fieldsObject).length === 0) {
+    (0, _warn.default)('empty `fieldsObject` given to .set()');
+  }
+
+  _gaCommand(trackerNames, 'set', fieldsObject);
+
+  if (_debug) {
+    (0, _log.default)("called ga('set', fieldsObject);");
+    (0, _log.default)("with fieldsObject: ".concat(JSON.stringify(fieldsObject)));
+  }
+}
+/**
+ * send:
+ * Clone of the low level `ga.send` method
+ * WARNING: No validations will be applied to this
+ * @param  {Object} fieldObject - field object for tracking different analytics
+ * @param  {Array} trackerNames - trackers to send the command to
+ * @param {Array} trackerNames - (optional) a list of extra trackers to run the command on
+ */
+
+
+function send(fieldObject, trackerNames) {
+  _gaCommand(trackerNames, 'send', fieldObject);
+
+  if (_debug) {
+    (0, _log.default)("called ga('send', fieldObject);");
+    (0, _log.default)("with fieldObject: ".concat(JSON.stringify(fieldObject)));
+    (0, _log.default)("with trackers: ".concat(JSON.stringify(trackerNames)));
+  }
+}
+/**
+ * pageview:
+ * Basic GA pageview tracking
+ * @param  {String} path - the current page page e.g. '/about'
+ * @param {Array} trackerNames - (optional) a list of extra trackers to run the command on
+ * @param {String} title - (optional) the page title e. g. 'My Website'
+ */
+
+
+function pageview(rawPath, trackerNames, title) {
+  if (!rawPath) {
+    (0, _warn.default)('path is required in .pageview()');
+    return;
+  }
+
+  var path = (0, _trim.default)(rawPath);
+
+  if (path === '') {
+    (0, _warn.default)('path cannot be an empty string in .pageview()');
+    return;
+  }
+
+  var extraFields = {};
+
+  if (title) {
+    extraFields.title = title;
+  }
+
+  if (typeof ga === 'function') {
+    _gaCommand(trackerNames, 'send', _objectSpread({
+      hitType: 'pageview',
+      page: path
+    }, extraFields));
+
+    if (_debug) {
+      (0, _log.default)("called ga('send', 'pageview', path);");
+      var extraLog = '';
+
+      if (title) {
+        extraLog = " and title: ".concat(title);
+      }
+
+      (0, _log.default)("with path: ".concat(path).concat(extraLog));
+    }
+  }
+}
+/**
+ * modalview:
+ * a proxy to basic GA pageview tracking to consistently track
+ * modal views that are an equivalent UX to a traditional pageview
+ * @param  {String} modalName e.g. 'add-or-edit-club'
+ * @param {Array} trackerNames - (optional) a list of extra trackers to run the command on
+ */
+
+
+function modalview(rawModalName, trackerNames) {
+  if (!rawModalName) {
+    (0, _warn.default)('modalName is required in .modalview(modalName)');
+    return;
+  }
+
+  var modalName = (0, _removeLeadingSlash.default)((0, _trim.default)(rawModalName));
+
+  if (modalName === '') {
+    (0, _warn.default)('modalName cannot be an empty string or a single / in .modalview()');
+    return;
+  }
+
+  if (typeof ga === 'function') {
+    var path = "/modal/".concat(modalName);
+
+    _gaCommand(trackerNames, 'send', 'pageview', path);
+
+    if (_debug) {
+      (0, _log.default)("called ga('send', 'pageview', path);");
+      (0, _log.default)("with path: ".concat(path));
+    }
+  }
+}
+/**
+ * timing:
+ * GA timing
+ * @param args.category {String} required
+ * @param args.variable {String} required
+ * @param args.value  {Int}  required
+ * @param args.label  {String} required
+ * @param {Array} trackerNames - (optional) a list of extra trackers to run the command on
+ */
+
+
+function timing() {
+  var _ref = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {},
+      category = _ref.category,
+      variable = _ref.variable,
+      value = _ref.value,
+      label = _ref.label;
+
+  var trackerNames = arguments.length > 1 ? arguments[1] : undefined;
+
+  if (typeof ga === 'function') {
+    if (!category || !variable || typeof value !== 'number') {
+      (0, _warn.default)('args.category, args.variable ' + 'AND args.value are required in timing() ' + 'AND args.value has to be a number');
+      return;
+    } // Required Fields
+
+
+    var fieldObject = {
+      hitType: 'timing',
+      timingCategory: _format(category),
+      timingVar: _format(variable),
+      timingValue: value
+    };
+
+    if (label) {
+      fieldObject.timingLabel = _format(label);
+    }
+
+    send(fieldObject, trackerNames);
+  }
+}
+/**
+ * event:
+ * GA event tracking
+ * @param args.category {String} required
+ * @param args.action {String} required
+ * @param args.label {String} optional
+ * @param args.value {Int} optional
+ * @param args.nonInteraction {boolean} optional
+ * @param args.transport {string} optional
+ * @param {{action: string, category: string}} trackerNames - (optional) a list of extra trackers to run the command on
+ */
+
+
+function event() {
+  var _ref2 = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {},
+      category = _ref2.category,
+      action = _ref2.action,
+      label = _ref2.label,
+      value = _ref2.value,
+      nonInteraction = _ref2.nonInteraction,
+      transport = _ref2.transport,
+      args = _objectWithoutProperties(_ref2, ["category", "action", "label", "value", "nonInteraction", "transport"]);
+
+  var trackerNames = arguments.length > 1 ? arguments[1] : undefined;
+
+  if (typeof ga === 'function') {
+    // Simple Validation
+    if (!category || !action) {
+      (0, _warn.default)('args.category AND args.action are required in event()');
+      return;
+    } // Required Fields
+
+
+    var fieldObject = {
+      hitType: 'event',
+      eventCategory: _format(category),
+      eventAction: _format(action)
+    }; // Optional Fields
+
+    if (label) {
+      fieldObject.eventLabel = _format(label);
+    }
+
+    if (typeof value !== 'undefined') {
+      if (typeof value !== 'number') {
+        (0, _warn.default)('Expected `args.value` arg to be a Number.');
+      } else {
+        fieldObject.eventValue = value;
+      }
+    }
+
+    if (typeof nonInteraction !== 'undefined') {
+      if (typeof nonInteraction !== 'boolean') {
+        (0, _warn.default)('`args.nonInteraction` must be a boolean.');
+      } else {
+        fieldObject.nonInteraction = nonInteraction;
+      }
+    }
+
+    if (typeof transport !== 'undefined') {
+      if (typeof transport !== 'string') {
+        (0, _warn.default)('`args.transport` must be a string.');
+      } else {
+        if (['beacon', 'xhr', 'image'].indexOf(transport) === -1) {
+          (0, _warn.default)('`args.transport` must be either one of these values: `beacon`, `xhr` or `image`');
+        }
+
+        fieldObject.transport = transport;
+      }
+    }
+
+    Object.keys(args).filter(function (key) {
+      return key.substr(0, 'dimension'.length) === 'dimension';
+    }).forEach(function (key) {
+      fieldObject[key] = args[key];
+    });
+    Object.keys(args).filter(function (key) {
+      return key.substr(0, 'metric'.length) === 'metric';
+    }).forEach(function (key) {
+      fieldObject[key] = args[key];
+    }); // Send to GA
+
+    send(fieldObject, trackerNames);
+  }
+}
+/**
+ * exception:
+ * GA exception tracking
+ * @param args.description {String} optional
+ * @param args.fatal {boolean} optional
+ * @param {Array} trackerNames - (optional) a list of extra trackers to run the command on
+ */
+
+
+function exception(_ref3, trackerNames) {
+  var description = _ref3.description,
+      fatal = _ref3.fatal;
+
+  if (typeof ga === 'function') {
+    // Required Fields
+    var fieldObject = {
+      hitType: 'exception'
+    }; // Optional Fields
+
+    if (description) {
+      fieldObject.exDescription = _format(description);
+    }
+
+    if (typeof fatal !== 'undefined') {
+      if (typeof fatal !== 'boolean') {
+        (0, _warn.default)('`args.fatal` must be a boolean.');
+      } else {
+        fieldObject.exFatal = fatal;
+      }
+    } // Send to GA
+
+
+    send(fieldObject, trackerNames);
+  }
+}
+
+var plugin = {
+  /**
+   * require:
+   * GA requires a plugin
+   * @param name {String} e.g. 'ecommerce' or 'myplugin'
+   * @param options {Object} optional e.g {path: '/log', debug: true}
+   * @param trackerName {String} optional e.g 'trackerName'
+   */
+  require: function require(rawName, options, trackerName) {
+    if (typeof ga === 'function') {
+      // Required Fields
+      if (!rawName) {
+        (0, _warn.default)('`name` is required in .require()');
+        return;
+      }
+
+      var name = (0, _trim.default)(rawName);
+
+      if (name === '') {
+        (0, _warn.default)('`name` cannot be an empty string in .require()');
+        return;
+      }
+
+      var requireString = trackerName ? "".concat(trackerName, ".require") : 'require'; // Optional Fields
+
+      if (options) {
+        if (_typeof(options) !== 'object') {
+          (0, _warn.default)('Expected `options` arg to be an Object');
+          return;
+        }
+
+        if (Object.keys(options).length === 0) {
+          (0, _warn.default)('Empty `options` given to .require()');
+        }
+
+        ga(requireString, name, options);
+
+        if (_debug) {
+          (0, _log.default)("called ga('require', '".concat(name, "', ").concat(JSON.stringify(options)));
+        }
+      } else {
+        ga(requireString, name);
+
+        if (_debug) {
+          (0, _log.default)("called ga('require', '".concat(name, "');"));
+        }
+      }
+    }
+  },
+
+  /**
+   * execute:
+   * GA execute action for plugin
+   * Takes variable number of arguments
+   * @param pluginName {String} e.g. 'ecommerce' or 'myplugin'
+   * @param action {String} e.g. 'addItem' or 'myCustomAction'
+   * @param actionType {String} optional e.g. 'detail'
+   * @param payload {Object} optional e.g { id: '1x5e', name : 'My product to track' }
+   */
+  execute: function execute(pluginName, action) {
+    var payload;
+    var actionType;
+
+    for (var _len3 = arguments.length, args = new Array(_len3 > 2 ? _len3 - 2 : 0), _key3 = 2; _key3 < _len3; _key3++) {
+      args[_key3 - 2] = arguments[_key3];
+    }
+
+    if (args.length === 1) {
+      payload = args[0];
+    } else {
+      actionType = args[0];
+      payload = args[1];
+    }
+
+    if (typeof ga === 'function') {
+      if (typeof pluginName !== 'string') {
+        (0, _warn.default)('Expected `pluginName` arg to be a String.');
+      } else if (typeof action !== 'string') {
+        (0, _warn.default)('Expected `action` arg to be a String.');
+      } else {
+        var command = "".concat(pluginName, ":").concat(action);
+        payload = payload || null;
+
+        if (actionType && payload) {
+          ga(command, actionType, payload);
+
+          if (_debug) {
+            (0, _log.default)("called ga('".concat(command, "');"));
+            (0, _log.default)("actionType: \"".concat(actionType, "\" with payload: ").concat(JSON.stringify(payload)));
+          }
+        } else if (payload) {
+          ga(command, payload);
+
+          if (_debug) {
+            (0, _log.default)("called ga('".concat(command, "');"));
+            (0, _log.default)("with payload: ".concat(JSON.stringify(payload)));
+          }
+        } else {
+          ga(command);
+
+          if (_debug) {
+            (0, _log.default)("called ga('".concat(command, "');"));
+          }
+        }
+      }
+    }
+  }
+};
+/**
+ * outboundLink:
+ * GA outboundLink tracking
+ * @param args.label {String} e.g. url, or 'Create an Account'
+ * @param {function} hitCallback - Called after processing a hit.
+ */
+
+exports.plugin = plugin;
+
+function outboundLink(args, hitCallback, trackerNames) {
+  if (typeof hitCallback !== 'function') {
+    (0, _warn.default)('hitCallback function is required');
+    return;
+  }
+
+  if (typeof ga === 'function') {
+    // Simple Validation
+    if (!args || !args.label) {
+      (0, _warn.default)('args.label is required in outboundLink()');
+      return;
+    } // Required Fields
+
+
+    var fieldObject = {
+      hitType: 'event',
+      eventCategory: 'Outbound',
+      eventAction: 'Click',
+      eventLabel: _format(args.label)
+    };
+    var safetyCallbackCalled = false;
+
+    var safetyCallback = function safetyCallback() {
+      // This prevents a delayed response from GA
+      // causing hitCallback from being fired twice
+      safetyCallbackCalled = true;
+      hitCallback();
+    }; // Using a timeout to ensure the execution of critical application code
+    // in the case when the GA server might be down
+    // or an ad blocker prevents sending the data
+    // register safety net timeout:
+
+
+    var t = setTimeout(safetyCallback, 250);
+
+    var clearableCallbackForGA = function clearableCallbackForGA() {
+      clearTimeout(t);
+
+      if (!safetyCallbackCalled) {
+        hitCallback();
+      }
+    };
+
+    fieldObject.hitCallback = clearableCallbackForGA; // Send to GA
+
+    send(fieldObject, trackerNames);
+  } else {
+    // if ga is not defined, return the callback so the application
+    // continues to work as expected
+    setTimeout(hitCallback, 0);
+  }
+}
+
+var testModeAPI = _testModeAPI.default;
+exports.testModeAPI = testModeAPI;
+var _default = {
+  initialize: initialize,
+  ga: ga,
+  set: set,
+  send: send,
+  pageview: pageview,
+  modalview: modalview,
+  timing: timing,
+  event: event,
+  exception: exception,
+  plugin: plugin,
+  outboundLink: outboundLink,
+  testModeAPI: _testModeAPI.default
+};
+exports.default = _default;
+},{"./utils/format":"../node_modules/react-ga/dist/esm/utils/format.js","./utils/removeLeadingSlash":"../node_modules/react-ga/dist/esm/utils/removeLeadingSlash.js","./utils/trim":"../node_modules/react-ga/dist/esm/utils/trim.js","./utils/loadGA":"../node_modules/react-ga/dist/esm/utils/loadGA.js","./utils/console/warn":"../node_modules/react-ga/dist/esm/utils/console/warn.js","./utils/console/log":"../node_modules/react-ga/dist/esm/utils/console/log.js","./utils/testModeAPI":"../node_modules/react-ga/dist/esm/utils/testModeAPI.js"}],"../node_modules/react-ga/dist/esm/index.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = exports.OutboundLink = exports.testModeAPI = exports.outboundLink = exports.plugin = exports.exception = exports.event = exports.timing = exports.modalview = exports.pageview = exports.send = exports.set = exports.ga = exports.addTrackers = exports.initialize = void 0;
+
+var _OutboundLink = _interopRequireDefault(require("./components/OutboundLink"));
+
+var Defaults = _interopRequireWildcard(require("./core"));
+
+function _getRequireWildcardCache() { if (typeof WeakMap !== "function") return null; var cache = new WeakMap(); _getRequireWildcardCache = function () { return cache; }; return cache; }
+
+function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } if (obj === null || typeof obj !== "object" && typeof obj !== "function") { return { default: obj }; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function ownKeys(object, enumerableOnly) {
+  var keys = Object.keys(object);
+
+  if (Object.getOwnPropertySymbols) {
+    var symbols = Object.getOwnPropertySymbols(object);
+    if (enumerableOnly) symbols = symbols.filter(function (sym) {
+      return Object.getOwnPropertyDescriptor(object, sym).enumerable;
+    });
+    keys.push.apply(keys, symbols);
+  }
+
+  return keys;
+}
+
+function _objectSpread(target) {
+  for (var i = 1; i < arguments.length; i++) {
+    var source = arguments[i] != null ? arguments[i] : {};
+
+    if (i % 2) {
+      ownKeys(Object(source), true).forEach(function (key) {
+        _defineProperty(target, key, source[key]);
+      });
+    } else if (Object.getOwnPropertyDescriptors) {
+      Object.defineProperties(target, Object.getOwnPropertyDescriptors(source));
+    } else {
+      ownKeys(Object(source)).forEach(function (key) {
+        Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key));
+      });
+    }
+  }
+
+  return target;
+}
+
+function _defineProperty(obj, key, value) {
+  if (key in obj) {
+    Object.defineProperty(obj, key, {
+      value: value,
+      enumerable: true,
+      configurable: true,
+      writable: true
+    });
+  } else {
+    obj[key] = value;
+  }
+
+  return obj;
+}
+
+var initialize = Defaults.initialize;
+exports.initialize = initialize;
+var addTrackers = Defaults.addTrackers;
+exports.addTrackers = addTrackers;
+var ga = Defaults.ga;
+exports.ga = ga;
+var set = Defaults.set;
+exports.set = set;
+var send = Defaults.send;
+exports.send = send;
+var pageview = Defaults.pageview;
+exports.pageview = pageview;
+var modalview = Defaults.modalview;
+exports.modalview = modalview;
+var timing = Defaults.timing;
+exports.timing = timing;
+var event = Defaults.event;
+exports.event = event;
+var exception = Defaults.exception;
+exports.exception = exception;
+var plugin = Defaults.plugin;
+exports.plugin = plugin;
+var outboundLink = Defaults.outboundLink;
+exports.outboundLink = outboundLink;
+var testModeAPI = Defaults.testModeAPI;
+exports.testModeAPI = testModeAPI;
+_OutboundLink.default.origTrackLink = _OutboundLink.default.trackLink;
+_OutboundLink.default.trackLink = Defaults.outboundLink;
+var OutboundLink = _OutboundLink.default;
+exports.OutboundLink = OutboundLink;
+
+var _default = _objectSpread(_objectSpread({}, Defaults), {}, {
+  OutboundLink: OutboundLink
+});
+
+exports.default = _default;
+},{"./components/OutboundLink":"../node_modules/react-ga/dist/esm/components/OutboundLink.js","./core":"../node_modules/react-ga/dist/esm/core.js"}],"locales/en-US.json":[function(require,module,exports) {
 module.exports = {
   "APP_NAME": "Unnat Pravah",
   "LANGUAGE_MARATHI": "Marathi",
@@ -109276,6 +110828,7 @@ module.exports = {
   "MARATHI_KANA_ARDHCHANDR": "काना अर्धचंद्राचा",
   "MARATHI_WISARG": "विसर्गा'चा",
   "ENGLISH_ALPHABETS": "English Alphabets",
+  "ENGLISH_SMALL_ALPHABETS": "Small English Alphabets",
   "ENGLISH_NUMBERS": "English Numbers",
   "ENGLISH_NUMBERS_1_TO_50": "1 To 50 English Numbers",
   "ENGLISH_NUMBERS_1_TO_100": "1 To 100 English Numbers"
@@ -109312,6 +110865,7 @@ module.exports = {
   "MARATHI_KANA_ARDHCHANDR": "काना अर्धचंद्राचा",
   "MARATHI_WISARG": "विसर्गा'चा",
   "ENGLISH_ALPHABETS": "इंग्रजी मुळाक्षरांचा",
+  "ENGLISH_SMALL_ALPHABETS": "छोट्या इंग्रजी मुळाक्षरांचा",
   "ENGLISH_NUMBERS": "इंग्रजी अंकांचा",
   "ENGLISH_NUMBERS_1_TO_50": "1 ते 50 इंग्रजी अंकांचा",
   "ENGLISH_NUMBERS_1_TO_100": "1 ते 100 इंग्रजी अंकांचा"
@@ -109339,6 +110893,8 @@ var _reactIntlUniversal = _interopRequireDefault(require("react-intl-universal")
 var _Constants = require("./components/Constants");
 
 var _InteractiveDashboard = _interopRequireDefault(require("./components/InteractiveDashboard"));
+
+var _reactGa = _interopRequireDefault(require("react-ga"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -109516,6 +111072,13 @@ var locales = {
   "en-US": require("./locales/en-US.json"),
   "mr-IN": require("./locales/mr-IN.json")
 };
+var trackingId = "UA-178020524-1"; // Analytics tracking ID
+
+var initGA = function initGA() {
+  _reactGa.default.initialize(trackingId);
+
+  _reactGa.default.pageview(window.location.pathname + window.location.search);
+};
 
 var App =
 /** @class */
@@ -109580,6 +111143,7 @@ function (_super) {
               });
             }
 
+            initGA();
             return [2
             /*return*/
             ];
@@ -109634,7 +111198,7 @@ function (_super) {
 
 var _default = App;
 exports.default = _default;
-},{"react":"../node_modules/react/index.js","./components/NavBar":"components/NavBar.tsx","./components/Dashboard":"components/Dashboard.tsx","./components/Contents":"components/Contents.tsx","@material-ui/core":"../node_modules/@material-ui/core/esm/index.js","react-intl-universal":"../node_modules/react-intl-universal/lib/index.js","./components/Constants":"components/Constants.jsx","./components/InteractiveDashboard":"components/InteractiveDashboard.tsx","./locales/en-US.json":"locales/en-US.json","./locales/mr-IN.json":"locales/mr-IN.json"}],"fonts/notosans.ttf":[function(require,module,exports) {
+},{"react":"../node_modules/react/index.js","./components/NavBar":"components/NavBar.tsx","./components/Dashboard":"components/Dashboard.tsx","./components/Contents":"components/Contents.tsx","@material-ui/core":"../node_modules/@material-ui/core/esm/index.js","react-intl-universal":"../node_modules/react-intl-universal/lib/index.js","./components/Constants":"components/Constants.jsx","./components/InteractiveDashboard":"components/InteractiveDashboard.tsx","react-ga":"../node_modules/react-ga/dist/esm/index.js","./locales/en-US.json":"locales/en-US.json","./locales/mr-IN.json":"locales/mr-IN.json"}],"fonts/notosans.ttf":[function(require,module,exports) {
 module.exports = "/notosans.4fccf72a.ttf";
 },{}],"index.tsx":[function(require,module,exports) {
 "use strict";
@@ -109722,7 +111286,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "58258" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "51466" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
